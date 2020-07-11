@@ -26,8 +26,8 @@ class About extends Component {
           <button onClick={this.userLogout}>Logout</button>
         </div>
         <div>
-          <h3>About</h3>
-          <p>Hi, this is about page.</p>
+          <h3>About Us</h3>
+          <p>Welcome to our React+Router+Redux website!</p>
         </div>
       </div>
     );
