@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-import About from '../components/home/About';
+import About from '../components/about/About';
+import { UserMannType } from '../actions';
 
 function mapStateToProps(state) {
   return {
@@ -8,7 +9,12 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {};
+  return {
+    LOGOUT: function (history) {
+      dispatch({ type: UserMannType.LOG_OUT });
+      history.push("/"); // 页面跳转
+    }
+  };
 }
 
 var AboutReactReducer = connect(
