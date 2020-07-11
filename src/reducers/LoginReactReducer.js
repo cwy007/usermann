@@ -13,7 +13,7 @@ function mapDispatchToProps(dispatch) {
       console.log("password: " + password);
       setTimeout(function() {
         dispatch({type: UserMannType.LOG_IN});
-        history.push({pathname: '/Home'});
+        history.push({pathname: '/Home'}); // 页面跳转
       }, 1000);
     }
   };
